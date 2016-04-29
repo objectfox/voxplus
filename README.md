@@ -1,5 +1,5 @@
-# voxplus
-A twitter bot that posts 1bit Mac news images to twitter
+# [voxplus](http://twitter.com/vox_plus)
+A [twitter bot](http://twitter.com/vox_plus) that posts 1bit Mac news images.
 
 Custom base images are easiest pulled from a MinivMac install.
 
