@@ -84,7 +84,7 @@ base.paste(bwimg,(20,65))
 time_image = Image.new("1", (400,15), (1))
 time_font = ImageFont.truetype("resources/chicagobold.ttf", 12)
 timeline = ImageDraw.Draw(time_image)
-timeline = timeline.text((0,0), publish_time.strftime('Published on %A, %B %d, %Y at %I:%M %p %Z'), font=time_font, fill=(0))
+timeline = timeline.text((0,0), publish_time.strftime('Published on %A, %B %d, %Y at %-I:%M %p %Z'), font=time_font, fill=(0))
 base.paste(time_image,(20,45))
 
 title_image = Image.new("1", (388,60), (1))
