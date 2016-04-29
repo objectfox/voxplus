@@ -1,0 +1,4 @@
+feedparser
+Pillow
+pytz
+twython
