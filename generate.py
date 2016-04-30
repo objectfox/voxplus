@@ -37,7 +37,7 @@ publish_time = None
 
 for entry in feed.entries:
 	m = re.search('^<img[^>]+ src="([^"]+)"', entry.content[0]['value'])
-	if m and m.group(1):
+	if len(entry.title) < 78 and m and m.group(1):
 		image = m.group(1)
 		headline = entry.title
 		author = entry.author
