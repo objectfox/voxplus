@@ -76,7 +76,7 @@ base = base.convert("1")
 
 imagefile = cStringIO.StringIO(urllib.urlopen(image).read())
 img = Image.open(imagefile)
-img.thumbnail([250,300])
+img.thumbnail([250,388])
 bwimg = img.convert("1")
 
 base.paste(bwimg,(20,65))
@@ -95,7 +95,7 @@ title_line = title_line.multiline_text((0,0), broken_headline, font=title_font, 
 
 base.paste(title_image,(20,238))
 
-author_image = Image.new("1", (100,12), (1))
+author_image = Image.new("1", (300,12), (1))
 author_font = ImageFont.truetype("resources/chicagobold.ttf", 10)
 user_byline = ImageDraw.Draw(author_image)
 user_byline = user_byline.text((0,0), "By "+author, font=author_font, fill=(0))
